@@ -11,14 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <!------------Javascript--------------->
     <script defer src="./js/index.js"></script>
+
     <title>Alpino Bistro</title>
 </head>
 <body>
+
+    <!-----------------------------Header--------------------------------->
     <header class="hero">
         <nav class="nav container container--hero">
 
-            <img src="./image/logo.png" class="nav__logo">
+            <img src="./image/logo.png" class="nav__logo" alt="logo">
 
             <ul class="nav__list">
                 <li class="nav__item">
@@ -37,20 +41,190 @@
                     <a href="#contacts" class="nav__link">Contacto</a>
                 </li>
             </ul>
-            <img src="./image/menu.svg" class="nav__menu">
+            <img src="./image/menu.svg" class="nav__menu" alt="logo-menu">
         
         </nav>
 
         <section class="hero__container container">
             <h1 class="hero__title">ALPINO BISTRO</h1>
             <p class="hero__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam id, magnam architecto in nisi doloremque nostrum sunt! Labore molestiae magni voluptatibus architecto eaque iure molestias autem nostrum, non nobis error!</p>
-            <a href="#" class="cta">Reserva ahora</a>
+            <a href="#" class="cta">Reservar ahora</a>
           </section>
-       
-
     </header>
 
+    <!----------------------------------------------Main----------------------------->
 
+    <main class="main">
+        <section class="about" id="nosotros">
+
+            <article class="about__container container">
+
+                <picture class="about__figure">
+                    <source media="(min-width: 600px )" srcset="./image/gourmet.webp">
+                    <img src="./image/gourmet.webp" class="about__img" alt="imagen">
+
+                </picture>
+                
+             
+
+                <div class="about__texts">
+
+                    <h2 class="subtitle">Lorem ipsum dolor sit amet.</h2>
+                    <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea doloribus unde alias rerum amet veniam.</p>
+                    <a href="#" class="cta__about">Ver mas</a>
+                </div>
+
+            </article>
+
+        </section>
+
+        <!----------------------------------------Learn-------------------------------->
+    
+
+      
+        <section class="learn container" id="service">
+            <h2 class="subtitle">Lorem lorem</h2>
+
+            <div class="learn__articles">
+                <article class="learn__article">
+                    <picture>
+                        <source media="(min-width: 768px )" srcset="./image/estacio-seafood-cafe.jpg">
+                        <img src="./image/estacio-seafood-cafe.jpg" alt="lapto" class="learn__img">
+                    </picture>
+
+                    <h2 class="learn__title">Lorem, ipsum.</h2>
+                    <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, alias.</p>
+
+
+                </article>
+
+                <article class="learn__article">
+                    <picture>
+                        <source media="(min-width: 768px )" srcset="./image/ramen-food.jpg">
+                        <img src="./image/ramen-food.jpg" alt="lapto" class="learn__img">
+                    </picture>
+
+                    <h2 class="learn__title">Lorem restaurante</h2>
+                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, assumenda? </p>
+                </article>
+
+                <article class="learn__article">
+                    <picture>
+                        <source media="(min-width: 786px )" srcset="./image/estacio-seafood-cafe.jpg">
+                        <img src="./image/estacio-seafood-cafe.jpg" alt="lapto" class="learn__img">
+                    </picture>
+
+                    <h2 class="learn__title">Responsive design</h2>
+                    <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, asperiores. </p>
+                </article>
+            </div>
+        </section>
+
+
+        <!--seccion menu food info-->
+
+
+        <section class="sponsor" id="sponsor">
+            <div class="sponsor__main container">
+                <article class="sponsor__texts">
+                    <h1 class="subtitle">Lorem ipsum dolor</h1>
+                    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti sequi itaque sint, aperiam beatae ipsa consequuntur eaque expedita autem nemo.</p>
+                    <a href="#" class="sponsor__cta">Acerca de nuestro menu</a>
+                </article>
+                
+                <picture class="sponsor__figure">
+                    <source media="(min-width: 768px )" srcset="./image/estacio-seafood-cafe.jpg"  class="sponsor__img">
+                    <img src="./image/estacio-seafood-cafe.jpg" class="sponsor__img">
+                </picture>
+            </div>
+        </section>
+
+
+        <section class="statistics">
+
+            <div class="statistics__container container">
+
+                <article class="statistics__item">
+
+                    <h3 class="statistics__title">The World's 50 Best Restaurants</h3>
+                    <p class="paragraph">Estamos dentro en la lista de los primeros 50 mejores restaurantes de mundo</p>
+
+                </article>
+
+                <article class="statistics__item">
+
+                    <h3 class="statistics__title">Horario 12:00pm a 11:00pm</h3>
+                    <p class="paragraph">Nuestro horario</p>
+
+                </article>
+
+                <article class="statistics__item">
+
+                    <h3 class="statistics__title">+ 807</h3>
+                    <p class="paragraph">Estas han sido las reseñas de nuestros comensales, teniendo un promedio de 4.7 estrellas de 5.</p>
+
+                </article>
+
+                <a href="#" class="statistics__cta">Reservar</a>
+
+            </div>
+
+        </section>
+
+</main>
+<footer class="footer">
+    <section class="footer__container container">
+      <nav class="nav nav--footer">
+        <h2 class="footer__title">Alpino Bistro</h2>
+
+        <ul class="nav__link nav__link--footer">
+          <li class="nav__items">
+            <a href="#" class="nav__links">Inicio</a>
+          </li>
+          <li class="nav__items">
+            <a href="#" class="nav__links">Sobre Nosotros</a>
+          </li>
+          <li class="nav__items">
+            <a href="#" class="nav__links">Servicio</a>
+          </li>
+          <li class="nav__items">
+            <a href="#" class="nav__links">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+      <form
+        class="footer__form"
+        action="https://formspree.io/f/mknkkrkj"
+        method="POST">
+        <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+        <div class="footer__inputs">
+          <input
+            type="email"
+            placeholder="Email:"
+            class="footer__input"
+            name="_replyto"
+          />
+          <input type="submit" value="Registrate" class="footer__submit" />
+        </div>
+      </form>
+    </section>
+
+    <section class="footer__copy container">
+      <div class="footer__social">
+        <a href="#" class="footer__icons">
+            <img src="./image/facebook.svg" class="footer__img" alt="icon-facebook"/></a>
+        <a href="#" class="footer__icons"
+          ><img src="./image/twitter.svg" class="footer__img" alt="icon-twitter"/></a>
+        <a href="#" class="footer__icons"
+          ><img src="./image/youtube.svg" class="footer__img" alt="icon-youtube"/></a>
+      </div>
+
+      <h3 class="footer__copyright">
+        Derechos reservados &copy; 
+      </h3>
+    </section>
+  </footer>
  
 
   
