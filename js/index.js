@@ -1,7 +1,4 @@
-/**Se declaran variables para mostrar menu responsive */
-const menu = document.querySelector('.nav__menu'); /**/
-const menuList = document.querySelector('.nav__list');
-const links = document.querySelectorAll('.nav__link');
+
 
 
 /*************************Our team slider*******************************/
@@ -10,10 +7,6 @@ const sliders = [...document.querySelectorAll('.our__body')];
 const buttonNext = document.querySelector('#next');
 const buttonBefore = document.querySelector('#before');
 let value; 
-
-
-
-
 
 /****************************Fuctions sliders***************************************/
 (()=>{
@@ -42,22 +35,7 @@ let value;
     }
 
 })();
-/******************* Menu Responsive ********************************** */
-menu.addEventListener('click', ()=>{
 
-    menuList.classList.toggle('nav__list--show');
-
-});
-
-links.forEach(function(link){
-
-    link.addEventListener('click', ()=>{
-
-        menuList.classList.remove('nav__list--show');
-
-    })
-
-});
 
 
 

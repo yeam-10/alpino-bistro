@@ -711,10 +711,25 @@ body{
 }
 
 
-
-
-
 @media (max-width:800px){
+
+    .our__container{
+        grid-template-columns: 30px 1fr 30px;
+    }
+
+    .our__body{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        gap: 3em;
+        justify-items:center ;
+    }
+
+
+    .our__img{
+        width: 200px;
+        height: 200px;
+        
+}
 
    
     
@@ -846,6 +861,27 @@ body{
 
 }
 
+
+/********Our team**********/
+
+
+.our{
+    --padding-container: 60px 0;
+}
+
+.our__container{
+    grid-template-columns: 28px 1fr 28px;
+    gap: .9em;
+}
+
+.our__arrow{
+    width: 100%;
+}
+
+.our__course{
+    margin-top: 15px;
+}
+
 /****Contacts***/
 
 .contacts__container{
@@ -856,6 +892,7 @@ body{
 .footer{
     text-align: center;
 }
+
 
 
 }
