@@ -1,234 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
 
     <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!------------Javascript--------------->
     <script defer src="./js/index.js"></script>
 
     <title>Alpino Bistro</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-----------------------------Header--------------------------------->
     <header class="hero">
-        <nav class="nav container container--hero">
+      <nav class="nav container container--hero">
+        <img src="./image/logo.png" class="nav__logo" alt="logo" />
 
-            <img src="./image/logo.png" class="nav__logo" alt="logo">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="/index.html" class="nav__link">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a href="./services.html" class="nav__link">Servicios</a>
+          </li>
+          <li class="nav__item">
+            <a href="/about.html#about" class="nav__link">Sobre Nosotros</a>
+          </li>
+          <li class="nav__item">
+            <a href="#menu" class="nav__link">Menu</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacts" class="nav__link">Contacto</a>
+          </li>
+        </ul>
+        <img src="./image/menu.svg" class="nav__menu" alt="logo-menu" />
+      </nav>
 
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#home" class="nav__link">Inicio</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#about" class="nav__link">Sobre Nosotros</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#service" class="nav__link">Servicios</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#menu" class="nav__link">Menu</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#contacts" class="nav__link">Contacto</a>
-                </li>
-            </ul>
-            <img src="./image/menu.svg" class="nav__menu" alt="logo-menu">
-        
-        </nav>
-
-        <section class="hero__container container">
-            <h1 class="hero__title">ALPINO BISTRO</h1>
-            <p class="hero__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam id, magnam architecto in nisi doloremque nostrum sunt! Labore molestiae magni voluptatibus architecto eaque iure molestias autem nostrum, non nobis error!</p>
-            <a href="#" class="cta">Reservar ahora</a>
-          </section>
+      <section class="hero__container container">
+        <h1 class="hero__title">ALPINO BISTRO</h1>
+        <p class="hero__paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam id,
+          magnam architecto in nisi doloremque nostrum sunt! Labore molestiae
+          magni voluptatibus architecto eaque iure molestias autem nostrum, non
+          nobis error!
+        </p>
+        <a href="#" class="cta">Reservar ahora</a>
+      </section>
     </header>
 
     <!----------------------------------------------Main----------------------------->
 
     <main class="main">
-        <section class="about" id="nosotros">
+      <section class="about" id="nosotros">
+        <article class="about__container container">
+          <picture class="about__figure">
+            <source media="(min-width: 600px )" srcset="./image/me.jpg" />
+            <img src="./image/me.webp" class="about__img" alt="imagen" />
+          </picture>
 
-            <article class="about__container container">
-
-                <picture class="about__figure">
-                    <source media="(min-width: 600px )" srcset="./image/gourmet.webp">
-                    <img src="./image/gourmet.webp" class="about__img" alt="imagen">
-
-                </picture>
-                
-             
-
-                <div class="about__texts">
-
-                    <h2 class="subtitle">Lorem ipsum dolor sit amet.</h2>
-                    <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea doloribus unde alias rerum amet veniam.</p>
-                    <a href="#" class="cta__about">Ver mas</a>
-                </div>
-
-            </article>
-
-        </section>
-
-        <!----------------------------------------Learn-------------------------------->
-    
-
+          <div class="about__texts">
+            <h2 class="subtitle">Conoce a nuestra Chef</h2>
+            <p class="paragraph">
+              En Alpino Bistro, la excelencia culinaria está en el corazón de nuestra filosofía, y gran parte de ello se debe al talento y la pasión de nuestra chef ejecutiva, Anyeimar Requena. Con más de 5 años de experiencia en la industria gastronómica, la Chef Anyeimar Requena trae una rica herencia culinaria y una habilidad incomparable para crear platos que deleitan los sentidos.
+            </p>
       
-        <section class="learn container" id="service">
-            <h2 class="subtitle">Lorem lorem</h2>
+          </div>
+        </article>
+      </section>
 
-            <div class="learn__articles">
-                <article class="learn__article">
-                    <picture>
-                        <source media="(min-width: 768px )" srcset="./image/estacio-seafood-cafe.jpg">
-                        <img src="./image/estacio-seafood-cafe.jpg" alt="lapto" class="learn__img">
-                    </picture>
+      <!----------------------------------------Learn-------------------------------->
 
-                    <h2 class="learn__title">Lorem, ipsum.</h2>
-                    <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, alias.</p>
+      <section class="learn container" id="service">
+        <h2 class="subtitle">Nuestro Menú</h2>
 
+        <div class="learn__articles">
+          <article class="learn__article">
+            <picture>
+              <source
+                media="(min-width: 768px )"
+                srcset="./image/ceviche.jpg"
+              alt="ceviche"/>
+              <img
+                src="./image/ceviche.webp"
+                alt="lapto"
+                class="learn__img"
+              />
+            </picture>
 
-                </article>
+            <h2 class="learn__title">Platos de entrada</h2>
+            <p class="paragraph">
+              Fresco y vibrante, este ceviche combina pescado del día marinado en cítricos, con cebolla morada, pimientos, cilantro y un toque de ají. .
+            </p>
+          </article>
 
-                <article class="learn__article">
-                    <picture>
-                        <source media="(min-width: 768px )" srcset="./image/ramen-food.jpg">
-                        <img src="./image/ramen-food.jpg" alt="lapto" class="learn__img">
-                    </picture>
+          <article class="learn__article">
+            <picture>
+              <source
+                media="(min-width: 768px )"
+                srcset="./image/ramen-food.jpg"
+              />
+              <img
+                src="./image/ramen-food.jpg"
+                alt="lapto"
+                class="learn__img"
+              />
+            </picture>
 
-                    <h2 class="learn__title">Lorem restaurante</h2>
-                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, assumenda? </p>
-                </article>
+            <h2 class="learn__title">Principales</h2>
+            <p class="paragraph">
+              Nuestra versión única del ramen combina la riqueza y profundidad de sabores del ramen japonés con toques alpinos. 
 
-                <article class="learn__article">
-                    <picture>
-                        <source media="(min-width: 786px )" srcset="./image/estacio-seafood-cafe.jpg">
-                        <img src="./image/estacio-seafood-cafe.jpg" alt="lapto" class="learn__img">
-                    </picture>
+            </p>
+          </article>
 
-                    <h2 class="learn__title">Responsive design</h2>
-                    <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, asperiores. </p>
-                </article>
-            </div>
-        </section>
+          <article class="learn__article">
+            <picture>
+              <source
+                media="(min-width: 786px )"
+                srcset="./image/ponques.jpg"
+              />
+              <img src="./image/ponques.webp" alt="postre" class="learn__img" />
+            </picture>
 
+            <h2 class="learn__title">Postres</h2>
+            <p class="paragraph">
+              Cupcake de manzanas caramelizadas sobre una base de masa crujiente, servida con helado de vainilla, para aquellos que prefieren un toque clásico en su postre.
+            </p>
+          </article>
+        </div>
+      </section>
 
-        <!--seccion menu food info-->
+      <!--seccion menu food info-->
 
+      <section class="sponsor" id="sponsor">
+        <div class="sponsor__main container">
+          <article class="sponsor__texts">
+            <h1 class="subtitle">Catas de Vino y Maridaje</h1>
+            <p class="paragraph">
+              Descubre las combinaciones perfectas de comida y vino con nuestras sesiones de cata y maridaje. Nuestro sommelier te guiará a través de una selección de vinos exclusivos, enseñándote cómo identificar sabores y aromas, y cómo maridar cada vino con nuestros platos para una experiencia gastronómica completa.
+            </p>
+            <a href="./menu.html" class="sponsor__cta">Ver menu</a>
+          </article>
 
-        <section class="sponsor" id="sponsor">
-            <div class="sponsor__main container">
-                <article class="sponsor__texts">
-                    <h1 class="subtitle">Lorem ipsum dolor</h1>
-                    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti sequi itaque sint, aperiam beatae ipsa consequuntur eaque expedita autem nemo.</p>
-                    <a href="#" class="sponsor__cta">Acerca de nuestro menu</a>
-                </article>
-                
-                <picture class="sponsor__figure">
-                    <source media="(min-width: 768px )" srcset="./image/estacio-seafood-cafe.jpg"  class="sponsor__img">
-                    <img src="./image/estacio-seafood-cafe.jpg" class="sponsor__img">
-                </picture>
-            </div>
-        </section>
+          <picture class="sponsor__figure">
+            <source
+              media="(min-width: 768px )"
+              srcset="./image/catas.jpg"
+              class="sponsor__img"
+            />
+            <img
+              src="./image/catas.webp"
+              class="sponsor__img"
+              alt="cafe"
+            />
+          </picture>
+        </div>
+      </section>
 
+      <section class="statistics">
+        <div class="statistics__container container">
+          <article class="statistics__item">
+            <h3 class="statistics__title">The World's 50 Best Restaurants</h3>
+            <p class="paragraph">
+              Estamos dentro en la lista de los primeros 50 mejores restaurantes
+              de mundo
+            </p>
+          </article>
 
-        <section class="statistics">
+          <article class="statistics__item">
+            <h3 class="statistics__title">Horario 12:00pm a 11:00pm</h3>
+            <p class="paragraph">Nuestro horario</p>
+          </article>
 
-            <div class="statistics__container container">
+          <article class="statistics__item">
+            <h3 class="statistics__title">+ 807</h3>
+            <p class="paragraph">
+              Estas han sido las reseñas de nuestros comensales, teniendo un
+              promedio de 4.7 estrellas de 5.
+            </p>
+          </article>
 
-                <article class="statistics__item">
+          <a href="#" class="statistics__cta">Reservar</a>
+        </div>
+      </section>
+    </main>
 
-                    <h3 class="statistics__title">The World's 50 Best Restaurants</h3>
-                    <p class="paragraph">Estamos dentro en la lista de los primeros 50 mejores restaurantes de mundo</p>
+    <footer class="footer" id="footer">
+      <section class="footer__container container">
+        <h2 class="subtitle">ALPINO BISTRO</h2>
+        <nav>
+          <ul class="nav__link nav__link--footer">
+            <li class="nav__items">
+              <a href="./index.html" class="nav__links">Inicio</a>
+            </li>
+            <li class="nav__items">
+              <a href="./about.html" class="nav__links">Sobre Nostros</a>
+            </li>
+            <li class="nav__items">
+              <a href="./services.html" class="nav__links">Servicios</a>
+            </li>
+            <li class="nav__items">
+              <a href="./menu.html" class="nav__links">Menu</a>
+            </li>
+            <li class="nav__items">
+              <a href="./contacts.html" class="nav__links">Contacto</a>
+            </li>
+          </ul>
+        </nav>
 
-                </article>
-
-                <article class="statistics__item">
-
-                    <h3 class="statistics__title">Horario 12:00pm a 11:00pm</h3>
-                    <p class="paragraph">Nuestro horario</p>
-
-                </article>
-
-                <article class="statistics__item">
-
-                    <h3 class="statistics__title">+ 807</h3>
-                    <p class="paragraph">Estas han sido las reseñas de nuestros comensales, teniendo un promedio de 4.7 estrellas de 5.</p>
-
-                </article>
-
-                <a href="#" class="statistics__cta">Reservar</a>
-
-            </div>
-
-        </section>
-
-</main>
-<footer class="footer">
-    <section class="footer__container container">
-      <nav class="nav nav--footer">
-        <h2 class="footer__title">Alpino Bistro</h2>
-
-        <ul class="nav__link nav__link--footer">
-          <li class="nav__items">
-            <a href="#" class="nav__links">Inicio</a>
+        <ul class="footer__contact">
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <img src="./image/tiktok.svg" class="footer__img" alt="tiktok" />
+            </a>
           </li>
-          <li class="nav__items">
-            <a href="#" class="nav__links">Sobre Nosotros</a>
+
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <img
+                src="./image/instagram.svg"
+                class="footer__img"
+                alt="instagram"
+              />
+            </a>
           </li>
-          <li class="nav__items">
-            <a href="#" class="nav__links">Servicio</a>
-          </li>
-          <li class="nav__items">
-            <a href="#" class="nav__links">Contacto</a>
+
+          <li class="footer__item">
+            <a href="#" class="footer__link">
+              <img src="./image/meta.svg" class="footer__img" alt="meta" />
+            </a>
           </li>
         </ul>
-      </nav>
-
-      <form
-        class="footer__form"
-        action="https://formspree.io/f/mknkkrkj"
-        method="POST">
-        <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
-        <div class="footer__inputs">
-          <input
-            type="email"
-            placeholder="Email:"
-            class="footer__input"
-            name="_replyto"
-          />
-          <input type="submit" value="Registrate" class="footer__submit" />
-        </div>
-      </form>
-    </section>
-
-    <section class="footer__copy container">
-      <div class="footer__social">
-        <a href="#" class="footer__icons">
-            <img src="./image/facebook.svg" class="footer__img" alt="icon-facebook"/></a>
-        <a href="#" class="footer__icons"
-          ><img src="./image/twitter.svg" class="footer__img" alt="icon-twitter"/></a>
-        <a href="#" class="footer__icons"
-          ><img src="./image/youtube.svg" class="footer__img" alt="icon-youtube"/></a>
-      </div>
-
-      <h3 class="footer__copyright">
-        Derechos reservados &copy; 
-      </h3>
-    </section>
-  </footer>
- 
-
-  
-  
-    
-</body>
+        <section class="footer__copy">
+          <h3 class="footer__copyright">
+            Derechos reservados &copy;Gastronomi
+          </h3>
+        </section>
+      </section>
+    </footer>
+  </body>
 </html>
