@@ -12,7 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
- 
 
     <!------------Javascript--------------->
     <script defer src="./js/index.js"></script>
@@ -28,19 +27,23 @@
 
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="/index.html" class="nav__link">Inicio</a>
+            <a href="/index.html" class="nav__link" title="home">Inicio</a>
           </li>
           <li class="nav__item">
-            <a href="./services.html" class="nav__link">Servicios</a>
+            <a href="./services.html" class="nav__link" title="service"
+              >Servicios</a
+            >
           </li>
           <li class="nav__item">
-            <a href="/about.html#about" class="nav__link">Sobre Nosotros</a>
+            <a href="/about.html#about" class="nav__link" title="about"
+              >Sobre Nosotros</a
+            >
           </li>
           <li class="nav__item">
-            <a href="#menu" class="nav__link">Menu</a>
+            <a href="#menu" class="nav__link" title="menu">Menu</a>
           </li>
           <li class="nav__item">
-            <a href="#contacts" class="nav__link">Contacto</a>
+            <a href="#contacts" class="nav__link" title="contact">Contacto</a>
           </li>
         </ul>
         <img src="./image/menu.svg" class="nav__menu" alt="logo-menu" />
@@ -54,7 +57,7 @@
           magni voluptatibus architecto eaque iure molestias autem nostrum, non
           nobis error!
         </p>
-        <a href="./contacts.html" class="cta">Reservar ahora</a>
+        <a href="./contacts.html" class="cta" title="reserve">Reservar ahora</a>
       </section>
     </header>
 
@@ -71,9 +74,13 @@
           <div class="about__texts">
             <h2 class="subtitle">Conoce a nuestra Chef</h2>
             <p class="paragraph">
-              En Alpino Bistro, la excelencia culinaria está en el corazón de nuestra filosofía, y gran parte de ello se debe al talento y la pasión de nuestra chef ejecutiva, Anyeimar Requena. Con más de 5 años de experiencia en la industria gastronómica, la Chef Anyeimar Requena trae una rica herencia culinaria y una habilidad incomparable para crear platos que deleitan los sentidos.
+              En Alpino Bistro, la excelencia culinaria está en el corazón de
+              nuestra filosofía, y gran parte de ello se debe al talento y la
+              pasión de nuestra chef ejecutiva, Anyeimar Requena. Con más de 5
+              años de experiencia en la industria gastronómica, la Chef Anyeimar
+              Requena trae una rica herencia culinaria y una habilidad
+              incomparable para crear platos que deleitan los sentidos.
             </p>
-      
           </div>
         </article>
       </section>
@@ -88,17 +95,21 @@
             <picture>
               <source
                 media="(min-width: 768px )"
-                srcset="./image/ceviche.jpg"/>
+                srcset="./image/ceviche.jpg"
+              />
               <img
                 src="./image/ceviche.webp"
                 alt="menu"
                 class="learn__img"
+                loading="lazy"
               />
             </picture>
 
             <h2 class="learn__title">Platos de entrada</h2>
             <p class="paragraph">
-              Fresco y vibrante, este ceviche combina pescado del día marinado en cítricos, con cebolla morada, pimientos, cilantro y un toque de ají. .
+              Fresco y vibrante, este ceviche combina pescado del día marinado
+              en cítricos, con cebolla morada, pimientos, cilantro y un toque de
+              ají. .
             </p>
           </article>
 
@@ -112,13 +123,14 @@
                 src="./image/ramen-food.jpg"
                 alt="lapto"
                 class="learn__img"
+                loading="lazy"
               />
             </picture>
 
             <h2 class="learn__title">Principales</h2>
             <p class="paragraph">
-              Nuestra versión única del ramen combina la riqueza y profundidad de sabores del ramen japonés con toques alpinos. 
-
+              Nuestra versión única del ramen combina la riqueza y profundidad
+              de sabores del ramen japonés con toques alpinos.
             </p>
           </article>
 
@@ -128,12 +140,19 @@
                 media="(min-width: 786px )"
                 srcset="./image/ponques.jpg"
               />
-              <img src="./image/ponques.webp" alt="postre" class="learn__img" />
+              <img
+                src="./image/ponques.webp"
+                alt="postre"
+                class="learn__img"
+                loading="lazy"
+              />
             </picture>
 
             <h2 class="learn__title">Postres</h2>
             <p class="paragraph">
-              Cupcake de manzanas caramelizadas sobre una base de masa crujiente, servida con helado de vainilla, para aquellos que prefieren un toque clásico en su postre.
+              Cupcake de manzanas caramelizadas sobre una base de masa
+              crujiente, servida con helado de vainilla, para aquellos que
+              prefieren un toque clásico en su postre.
             </p>
           </article>
         </div>
@@ -146,9 +165,15 @@
           <article class="sponsor__texts">
             <h1 class="subtitle">Catas de Vino y Maridaje</h1>
             <p class="paragraph">
-              Descubre las combinaciones perfectas de comida y vino con nuestras sesiones de cata y maridaje. Nuestro sommelier te guiará a través de una selección de vinos exclusivos, enseñándote cómo identificar sabores y aromas, y cómo maridar cada vino con nuestros platos para una experiencia gastronómica completa.
+              Descubre las combinaciones perfectas de comida y vino con nuestras
+              sesiones de cata y maridaje. Nuestro sommelier te guiará a través
+              de una selección de vinos exclusivos, enseñándote cómo identificar
+              sabores y aromas, y cómo maridar cada vino con nuestros platos
+              para una experiencia gastronómica completa.
             </p>
-            <a href="./menu.html" class="sponsor__cta">Ver menu</a>
+            <a href="./menu.html" class="sponsor__cta" title="view-menu"
+              >Ver menu</a
+            >
           </article>
 
           <picture class="sponsor__figure">
@@ -161,6 +186,7 @@
               src="./image/catas.webp"
               class="sponsor__img"
               alt="cafe"
+              loading="lazy"
             />
           </picture>
         </div>
@@ -189,7 +215,7 @@
             </p>
           </article>
 
-          <a href="#" class="statistics__cta">Reservar</a>
+          <a href="#" class="statistics__cta" title="reserve">Reservar</a>
         </div>
       </section>
     </main>
@@ -200,19 +226,28 @@
         <nav>
           <ul class="nav__link nav__link--footer">
             <li class="nav__items">
-              <a href="./index.html" class="nav__links">Inicio</a>
+              <a href="./index.html" class="nav__links" title="home">Inicio</a>
             </li>
             <li class="nav__items">
-              <a href="./about.html" class="nav__links">Sobre Nosotros</a>
+              <a href="./about.html" class="nav__links" title="about"
+                >Sobre Nosotros</a
+              >
             </li>
             <li class="nav__items">
-              <a href="./services.html" class="nav__links">Servicios</a>
+              <a href="./services.html" class="nav__links" title="service"
+                >Servicios</a
+              >
             </li>
             <li class="nav__items">
-              <a href="./menu.html" class="nav__links">Menu</a>
+              <a href="./menu.html" class="nav__links" title="menu">Menu</a>
             </li>
             <li class="nav__items">
-              <a href="./contacts.html" class="nav__links">Contacto</a>
+              <a href="#" class="nav__links" title="privacy">Privacy policy</a>
+          </li>
+            <li class="nav__items">
+              <a href="./contacts.html" class="nav__links" title="contact"
+                >Contacto</a
+              >
             </li>
           </ul>
         </nav>
@@ -220,7 +255,12 @@
         <ul class="footer__contact">
           <li class="footer__item">
             <a href="#" class="footer__link">
-              <img src="./image/tiktok.svg" class="footer__img" alt="tiktok" />
+              <img
+                src="./image/tiktok.svg"
+                class="footer__img"
+                alt="tiktok"
+                loading="lazy"
+              />
             </a>
           </li>
 
@@ -230,13 +270,19 @@
                 src="./image/instagram.svg"
                 class="footer__img"
                 alt="instagram"
+                loading="lazy"
               />
             </a>
           </li>
 
           <li class="footer__item">
             <a href="#" class="footer__link">
-              <img src="./image/meta.svg" class="footer__img" alt="meta" />
+              <img
+                src="./image/meta.svg"
+                class="footer__img"
+                alt="meta"
+                loading="lazy"
+              />
             </a>
           </li>
         </ul>
@@ -246,6 +292,7 @@
           </h3>
         </section>
       </section>
+      <p class="paragraph__footer">Direccion: Calle Aladierna 5, 2A</p>
     </footer>
   </body>
 </html>

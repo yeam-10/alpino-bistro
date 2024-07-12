@@ -27,19 +27,25 @@
 
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="/index.html" class="nav__link">Inicio</a>
+            <a href="/index.html" class="nav__link" title="home">Inicio</a>
           </li>
           <li class="nav__item">
-            <a href="./services.html" class="nav__link">Servicios</a>
+            <a href="./services.html" class="nav__link" title="service"
+              >Servicios</a
+            >
           </li>
           <li class="nav__item">
-            <a href="/about.html" class="nav__link">Sobre Nosotros</a>
+            <a href="/about.html" class="nav__link" title="about"
+              >Sobre Nosotros</a
+            >
           </li>
           <li class="nav__item">
-            <a href="/menu.html" class="nav__link">Menu</a>
+            <a href="/menu.html" class="nav__link" title="menu">Menu</a>
           </li>
           <li class="nav__item">
-            <a href="/contacts.html" class="nav__link">Contacto</a>
+            <a href="/contacts.html" class="nav__link" title="contacts"
+              >Contacto</a
+            >
           </li>
         </ul>
         <img src="./image/menu.svg" class="nav__menu" alt="logo-menu" />
@@ -92,6 +98,7 @@
               src="./image/service-restaurant.avif"
               class="service__img"
               alt="imagen"
+              loading="lazy"
             />
           </picture>
         </article>
@@ -101,7 +108,12 @@
         <article class="about__container container">
           <picture class="about__figure">
             <source media="(min-width: 768px )" srcset="/image/reserva.png" />
-            <img src="./image/reserva.avif" class="service__img" alt="imagen" />
+            <img
+              src="./image/reserva.avif"
+              class="service__img"
+              alt="imagen"
+              loading="lazy"
+            />
           </picture>
 
           <div class="about__texts">
@@ -170,7 +182,12 @@
               <h3 class="questions__title">
                 ¿Cómo puedo hacer una reserva?
                 <span class="questions__arrow">
-                  <img src="./image/arrow.svg" class="questions__img" alt="arrow" />
+                  <img
+                    src="./image/arrow.svg"
+                    class="questions__img"
+                    alt="arrow"
+                    loading="lazy"
+                  />
                 </span>
               </h3>
 
@@ -188,7 +205,12 @@
               <h3 class="questions__title">
                 ¿Ofrecen opciones de menú personalizadas para eventos privados?
                 <span class="questions__arrow">
-                  <img src="./image/arrow.svg" class="questions__img" alt="arrow" />
+                  <img
+                    src="./image/arrow.svg"
+                    class="questions__img"
+                    alt="arrow"
+                    loading="lazy"
+                  />
                 </span>
               </h3>
 
@@ -206,7 +228,12 @@
               <h3 class="questions__title">
                 ¿Tienen servicio de catering?
                 <span class="questions__arrow">
-                  <img src="./image/arrow.svg" class="questions__img" alt="arrow" />
+                  <img
+                    src="./image/arrow.svg"
+                    class="questions__img"
+                    alt="arrow"
+                    loading="lazy"
+                  />
                 </span>
               </h3>
 
@@ -229,32 +256,40 @@
         <nav>
           <ul class="nav__link nav__link--footer">
             <li class="nav__items">
-              <a href="./index.html" class="nav__links">Inicio</a>
+              <a href="./index.html" class="nav__links" title="home">Inicio</a>
             </li>
             <li class="nav__items">
-              <a href="./about.html" class="nav__links">Sobre Nosotros</a>
+              <a href="./about.html" class="nav__links" title="about"
+                >Sobre Nosotros</a
+              >
             </li>
             <li class="nav__items">
-              <a href="./services.html" class="nav__links">Servicios</a>
+              <a href="./services.html" class="nav__links" title="service"
+                >Servicios</a
+              >
             </li>
             <li class="nav__items">
-              <a href="./menu.html" class="nav__links">Menu</a>
+              <a href="./menu.html" class="nav__links" title="menu">Menu</a>
             </li>
             <li class="nav__items">
-              <a href="./contacts.html" class="nav__links">Contacto</a>
+              <a href="#" class="nav__links" title="privacy">Privacy policy</a>
+          </li>
+            <li class="nav__items">
+              <a href="./contacts.html" class="nav__links" title="contacts"
+                >Contacto</a>
             </li>
           </ul>
         </nav>
 
         <ul class="footer__contact">
           <li class="footer__item">
-            <a href="#" class="footer__link">
+            <a href="#" class="footer__link" title="icon-tiktok">
               <img src="./image/tiktok.svg" class="footer__img" alt="tiktok" />
             </a>
           </li>
 
           <li class="footer__item">
-            <a href="#" class="footer__link">
+            <a href="#" class="footer__link" title="icon-instagram">
               <img
                 src="./image/instagram.svg"
                 class="footer__img"
@@ -264,7 +299,7 @@
           </li>
 
           <li class="footer__item">
-            <a href="#" class="footer__link">
+            <a href="#" class="footer__link" title="icon-meta">
               <img src="./image/meta.svg" class="footer__img" alt="meta" />
             </a>
           </li>
@@ -276,5 +311,6 @@
         </section>
       </section>
     </footer>
+    <p class="paragraph__footer">Direccion: Calle Aladierna 5, 2A</p>
   </body>
 </html>

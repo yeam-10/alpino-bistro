@@ -1,280 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
 
     <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <!------------Javascript--------------->
     <script defer src="./js/index.js"></script>
     <script defer src="./js/menu.js"></script>
 
     <title>Alpino Bistro</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-----------------------------Header--------------------------------->
     <header class="hero">
-        <nav class="nav container container--hero">
+      <nav class="nav container container--hero">
+        <img src="./image/logo.png" class="nav__logo" alt="logo" />
 
-            <img src="./image/logo.png" class="nav__logo" alt="logo">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link" title="home">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a href="./services.html" class="nav__link" title="service"
+              >Servicios</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="./about.html" class="nav__link" title="about"
+              >Sobre Nosotros</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="./menu.html" class="nav__link" title="menu">Menu</a>
+          </li>
+          <li class="nav__item">
+            <a href="./contacts.html" class="nav__link" title="contact"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+        <img src="./image/menu.svg" class="nav__menu" alt="logo-menu" />
+      </nav>
 
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="./index.html" class="nav__link">Inicio</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./services.html" class="nav__link">Servicios</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./about.html" class="nav__link">Sobre Nosotros</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./menu.html" class="nav__link">Menu</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./contacts.html" class="nav__link">Contacto</a>
-                </li>
-            </ul>
-            <img src="./image/menu.svg" class="nav__menu" alt="logo-menu">
-        
-        </nav>
-
-        <section class="hero__container container">
-            <h1 class="hero__title">¡Bienvenidos a Alpino Bistro!</h1>
-            <p class="hero__paragraph">Enclavado en el corazón de la ciudad, Alpino Bistro es un refugio para los amantes de la buena cocina y el ambiente acogedor. Desde el momento en que cruzas nuestras puertas, te invitamos a sumergirte en una experiencia gastronómica única que combina la tradición culinaria europea con un toque moderno y creativo.</p>
-            <a href="./contacts.html" class="cta">Reserva ahora</a>
-        </section>
+      <section class="hero__container container">
+        <h1 class="hero__title">¡Bienvenidos a Alpino Bistro!</h1>
+        <p class="hero__paragraph">
+          Enclavado en el corazón de la ciudad, Alpino Bistro es un refugio para
+          los amantes de la buena cocina y el ambiente acogedor. Desde el
+          momento en que cruzas nuestras puertas, te invitamos a sumergirte en
+          una experiencia gastronómica única que combina la tradición culinaria
+          europea con un toque moderno y creativo.
+        </p>
+        <a href="./contacts.html" class="cta" title="reserve">Reserva ahora</a>
+      </section>
     </header>
 
-    <!----------------------------------------------Main----------------------------->
+    <!----------------------------------------------Main----------------------------------------------->
 
     <main class="main">
-        <section class="about" id="nosotros">
+      <section class="about" id="nosotros">
+        <article class="about__container container">
+          <picture class="about__figure">
+            <source media="(min-width: 600px )" srcset="./image/historia.png" />
+            <img
+              src="./image/historia.avif"
+              class="about__img"
+              alt="imagen"
+              loading="lazy"
+            />
+          </picture>
+          <div class="about__texts">
+            <h2 class="subtitle">Nuestra Historia</h2>
+            <p class="paragraph">
+              Alpino Bistro nació de la pasión de un grupo de amigos por la
+              gastronomía y los buenos momentos compartidos en torno a una mesa.
+              Inspirados por los paisajes y sabores de los Alpes, decidimos
+              crear un espacio donde cada plato cuenta una historia y cada
+              visita se convierte en un recuerdo inolvidable. Desde nuestras
+              humildes comienzas, hemos crecido gracias al apoyo de nuestra
+              comunidad y al compromiso con la calidad y la innovación.
+            </p>
+          </div>
+        </article>
+      </section>
 
-            <article class="about__container container">
+      <!------------------------------------------------Our philosophy------------------------------->
 
-                <picture class="about__figure">
-                    <source media="(min-width: 600px )" srcset="./image/historia.png">
-                    <img src="./image/historia.avif" class="about__img" alt="imagen">
-
-                </picture>
-                
-             
-
-                <div class="about__texts">
-
-                    <h2 class="subtitle">Nuestra Historia</h2>
-                    <p class="paragraph">Alpino Bistro nació de la pasión de un grupo de amigos por la gastronomía y los buenos momentos compartidos en torno a una mesa. Inspirados por los paisajes y sabores de los Alpes, decidimos crear un espacio donde cada plato cuenta una historia y cada visita se convierte en un recuerdo inolvidable. Desde nuestras humildes comienzas, hemos crecido gracias al apoyo de nuestra comunidad y al compromiso con la calidad y la innovación.</p>
-                   
-                </div>
-
-            </article>
-
-        </section>
-
-        <!--Our philosophy-->
-
-    <section class="philosophy container">
+      <section class="philosophy container">
         <h2 class="subtitle">Nuestra Filosofía</h2>
-        <p class="philosophy__copy">En Alpino Bistro, creemos que la comida es mucho más que un simple sustento; es una forma de arte y una manera de conectar con los demás. Por eso, seleccionamos cuidadosamente cada ingrediente, priorizando productos frescos, locales y de temporada. Nuestro equipo de chefs talentosos se dedica a transformar estos ingredientes en platos que deleitan los sentidos y evocan la esencia de la cocina alpina..</p>
-    </section>
+        <p class="philosophy__copy">
+          En Alpino Bistro, creemos que la comida es mucho más que un simple
+          sustento; es una forma de arte y una manera de conectar con los demás.
+          Por eso, seleccionamos cuidadosamente cada ingrediente, priorizando
+          productos frescos, locales y de temporada. Nuestro equipo de chefs
+          talentosos se dedica a transformar estos ingredientes en platos que
+          deleitan los sentidos y evocan la esencia de la cocina alpina..
+        </p>
+      </section>
 
+      <!----------------------------------------Learn------------------------------------------------>
 
+      <section class="learn container" id="service">
+        <h2 class="subtitle">Nuestro menu</h2>
 
+        <div class="learn__articles">
+          <article class="learn__article">
+            <picture>
+              <source
+                media="(min-width: 768px )"
+                srcset="./image/estacio-seafood-cafe.jpg"
+              />
+              <img
+                src="./image/estacio-seafood-cafe.jpg"
+                alt="lapto"
+                class="learn__img"
+                loading="lazy"
+              />
+            </picture>
 
+            <h2 class="learn__title">Arepas multicolores</h2>
+            <p class="paragraph">
+              Una explosión de sabores y colores, nuestras arepas están
+              elaboradas con maíz fresco y vienen en una variedad de tonalidades
+              naturales..
+            </p>
+            <a href="./menu.html" class="cta__about__menu" title="view-menu"
+              >Ver Menu</a
+            >
+          </article>
 
-        <!----------------------------------------Learn-------------------------------->
-    
+          <article class="learn__article">
+            <picture>
+              <source
+                media="(min-width: 768px )"
+                srcset="./image/ramen-food.jpg"
+              />
+              <img
+                src="./image/ramen-food.jpg"
+                alt="lapto"
+                class="learn__img"
+                loading="lazy"
+              />
+            </picture>
 
-      
-        <section class="learn container" id="service">
-            <h2 class="subtitle">Nuestro menu</h2>
+            <h2 class="learn__title">Ceviche Criollo</h2>
+            <p class="paragraph">
+              Fresco y vibrante, este ceviche combina pescado del día marinado
+              en cítricos, con cebolla morada, pimientos, cilantro y un toque de
+              ají.
+            </p>
+            <a href="./menu.html" class="cta__about__menu" title="view-menu"
+              >Ver Menu</a
+            >
+          </article>
 
-            <div class="learn__articles">
-                <article class="learn__article">
-                    <picture>
-                        <source media="(min-width: 768px )" srcset="./image/estacio-seafood-cafe.jpg">
-                        <img src="./image/estacio-seafood-cafe.jpg" alt="lapto" class="learn__img">
-                    </picture>
+          <article class="learn__article">
+            <picture>
+              <source
+                media="(min-width: 786px )"
+                srcset="./image/estacio-seafood-cafe.jpg"
+              />
+              <img
+                src="./image/estacio-seafood-cafe.jpg"
+                alt="lapto"
+                class="learn__img"
+                loading="lazy"
+              />
+            </picture>
 
-                    <h2 class="learn__title">Arepas multicolores</h2>
-                    <p class="paragraph">Una explosión de sabores y colores, nuestras arepas están elaboradas con maíz fresco y vienen en una variedad de tonalidades naturales..</p>
-                    <a href="./menu.html" class="cta__about__menu">Ver Menu</a>
-
-
-                </article>
-
-                <article class="learn__article">
-                    <picture>
-                        <source media="(min-width: 768px )" srcset="./image/ramen-food.jpg">
-                        <img src="./image/ramen-food.jpg" alt="lapto" class="learn__img">
-                    </picture>
-
-                    <h2 class="learn__title">Ceviche Criollo</h2>
-                    <p class="paragraph">Fresco y vibrante, este ceviche combina pescado del día marinado en cítricos, con cebolla morada, pimientos, cilantro y un toque de ají.  </p>
-                    <a href="./menu.html" class="cta__about__menu">Ver Menu</a>
-                </article>
-
-                <article class="learn__article">
-                    <picture>
-                        <source media="(min-width: 786px )" srcset="./image/estacio-seafood-cafe.jpg">
-                        <img src="./image/estacio-seafood-cafe.jpg" alt="lapto" class="learn__img">
-                    </picture>
-
-                    <h2 class="learn__title">Asado Negro</h2>
-                    <p class="paragraph">Un clásico de la gastronomía criolla, este plato presenta un corte de res marinado y cocido lentamente en una rica salsa de papelón y especias </p>
-                    <a href="./menu.html" class="cta__about__menu">Ver Menu</a>
-                </article>
-            </div>
-        </section>
-
-
-    <!------------------------seccion Our teams------------------------------------------->
-    <section class="our">
-        <div class="our__container container">
-            <img src="./image/leftarrow.svg" class="our__arrow" id="before" alt="arrow">
-
-            <section class="our__body our__body--show" data-id="1">
-                <div class="our__texts">
-                    <h2 class="subtitle">Chef Pastelera<span class="our__course"> Andrea Dicopio</span></h2>
-                    <p class="our__review">En Alpino Bistro, no solo nos destacamos por nuestros exquisitos platos principales, sino también por nuestros postres que deleitan y sorprenden a cada uno de nuestros comensales. Esto es gracias al talento y la creatividad de nuestra Chef Pastelera, Andrea DiCapio.</p>
-                </div>
-
-                <picture>
-                    <source media="(min-width: 768px)" srcset="./image/andrea-dopico.jpg">
-                    <img src="./image/andrea-dopico.jpg" class="our__img" alt="chef_one">
-                </picture>
-
-             
-            </section>
-
-            <section class="our__body" data-id="2">
-                <div class="our__texts">
-                    <h2 class="subtitle">Chef<span class="our__course">Victor Moreno</span></h2>
-                    <p class="our__review">En Alpino Bistro, estamos orgullosos de contar con el talento excepcional y la visión culinaria del Chef Victor Moreno. Con una trayectoria impresionante y una pasión inquebrantable por la cocina, Victor aporta una combinación única de tradición y modernidad a cada plato que crea.</p>
-                </div>
-
-                <picture>
-                    <source media="(min-width: 768px)" srcset="./image/victor-Moreno.jpg">
-                    <img src="./image/victor-Moreno.jpg" class="our__img" alt="chef_two">
-                </picture>
-            </section>
-
-            <section class="our__body" data-id="3">
-                <div class="our__texts">
-                    <h2 class="subtitle">Chef<span class="our__course">Anyeimar Requena</span></h2>
-                    <p class="our__review">En Alpino Bistro, el arte culinario alcanza nuevas alturas gracias a la creatividad y dedicación de nuestra Chef, Anyeimar Requena. Con una vasta experiencia y una pasión inquebrantable por la cocina, Anyeimar aporta una fusión única de tradición y modernidad a cada uno de sus platos.</p>
-                </div>
-
-                <picture>
-                    <source media="(min-width: 768px)" srcset="./image/me.jpg">
-                    <img src="./image/me.webp" class="our__img" alt="chef_three">
-                </picture>
-            </section>
-
-            <section class="our__body" data-id="4">
-                <div class="our__texts">
-                    <h2 class="subtitle">Chef <span class="our__course"> Narda Lepes</span></h2>
-                    <p class="our__review">En Alpino Bistro, estamos encantados de contar con la extraordinaria habilidad y la visión culinaria de la reconocida Chef Narda Lepes. Con una trayectoria estelar y un enfoque innovador, Narda transforma ingredientes simples en experiencias gastronómicas inolvidables, combinando la tradición con la modernidad en cada plato.
-
-                    </p>
-                </div>
-
-                <picture>
-                    <source media="(min-width: 769px)" srcset="./image/narda.jpg">
-                    <img src="./image/narda.webp" class="our__img" alt="chef_four">
-                </picture>
-            </section>
-
-           <picture>
-            <source media="(min-width: 768px )" srcset="./image/rigtharrow.svg">
-            <img src="./image/rigtharrow.svg" class="our__arrow" id="next">
-           </picture>
-     
+            <h2 class="learn__title">Asado Negro</h2>
+            <p class="paragraph">
+              Un clásico de la gastronomía criolla, este plato presenta un corte
+              de res marinado y cocido lentamente en una rica salsa de papelón y
+              especias
+            </p>
+            <a href="./menu.html" class="cta__about__menu" title="view-menu"
+              >Ver Menu</a
+            >
+          </article>
         </div>
-    </section>
+      </section>
 
+      <!------------------------seccion Our teams------------------------------------------->
+      <section class="our">
+        <div class="our__container container">
+          <img
+            src="./image/leftarrow.svg"
+            class="our__arrow"
+            id="before"
+            alt="arrow"
+            loading="lazy"
+          />
 
+          <section class="our__body our__body--show" data-id="1">
+            <div class="our__texts">
+              <h2 class="subtitle">
+                Chef Pastelera<span class="our__course"> Andrea Dicopio</span>
+              </h2>
+              <p class="our__review">
+                En Alpino Bistro, no solo nos destacamos por nuestros exquisitos
+                platos principales, sino también por nuestros postres que
+                deleitan y sorprenden a cada uno de nuestros comensales. Esto es
+                gracias al talento y la creatividad de nuestra Chef Pastelera,
+                Andrea DiCapio.
+              </p>
+            </div>
 
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="./image/andrea-dopico.jpg"
+              />
+              <img
+                src="./image/andrea-dopico.jpg"
+                class="our__img"
+                alt="chef_one"
+                loading="lazy"
+              />
+            </picture>
+          </section>
 
-   
+          <section class="our__body" data-id="2">
+            <div class="our__texts">
+              <h2 class="subtitle">
+                Chef<span class="our__course">Victor Moreno</span>
+              </h2>
+              <p class="our__review">
+                En Alpino Bistro, estamos orgullosos de contar con el talento
+                excepcional y la visión culinaria del Chef Victor Moreno. Con
+                una trayectoria impresionante y una pasión inquebrantable por la
+                cocina, Victor aporta una combinación única de tradición y
+                modernidad a cada plato que crea.
+              </p>
+            </div>
 
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="./image/victor-Moreno.jpg"
+              />
+              <img
+                src="./image/victor-Moreno.jpg"
+                class="our__img"
+                alt="chef_two"
+                loading="lazy"
+              />
+            </picture>
+          </section>
 
-     
+          <section class="our__body" data-id="3">
+            <div class="our__texts">
+              <h2 class="subtitle">
+                Chef<span class="our__course">Anyeimar Requena</span>
+              </h2>
+              <p class="our__review">
+                En Alpino Bistro, el arte culinario alcanza nuevas alturas
+                gracias a la creatividad y dedicación de nuestra Chef, Anyeimar
+                Requena. Con una vasta experiencia y una pasión inquebrantable
+                por la cocina, Anyeimar aporta una fusión única de tradición y
+                modernidad a cada uno de sus platos.
+              </p>
+            </div>
 
-</main>
+            <picture>
+              <source media="(min-width: 768px)" srcset="./image/me.jpg" />
+              <img
+                src="./image/me.webp"
+                class="our__img"
+                alt="chef_three"
+                loading="lazy"
+              />
+            </picture>
+          </section>
 
-<footer class="footer" id="footer">
+          <section class="our__body" data-id="4">
+            <div class="our__texts">
+              <h2 class="subtitle">
+                Chef <span class="our__course"> Narda Lepes</span>
+              </h2>
+              <p class="our__review">
+                En Alpino Bistro, estamos encantados de contar con la
+                extraordinaria habilidad y la visión culinaria de la reconocida
+                Chef Narda Lepes. Con una trayectoria estelar y un enfoque
+                innovador, Narda transforma ingredientes simples en experiencias
+                gastronómicas inolvidables, combinando la tradición con la
+                modernidad en cada plato.
+              </p>
+            </div>
 
-    <section class="footer__container container">
+            <picture>
+              <source media="(min-width: 769px)" srcset="./image/narda.jpg" />
+              <img
+                src="./image/narda.webp"
+                class="our__img"
+                alt="chef_four"
+                loading="lazy"
+              />
+            </picture>
+          </section>
 
-        <h2 class="subtitle">ALPINO BISTRO</h2>
+          <picture>
+            <source
+              media="(min-width: 768px )"
+              srcset="./image/rigtharrow.svg"
+            />
+            <img
+              src="./image/rigtharrow.svg"
+              class="our__arrow"
+              id="next"
+              loading="lazy"
+              alt="rigtharrow"
+            />
+          </picture>
+        </div>
+      </section>
+    </main>
 
-                <ul class="nav__link nav__link--footer">
-                    <li class="nav__items">
-                        <a href="./index.html" class="nav__links">Inicio</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="./about.html" class="nav__links">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="./services.html" class="nav__links">Servicios</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="./menu.html" class="nav__links">Menu</a>
-                    </li>
-                    <li class="nav__items">
-                        <a href="./contacts.html" class="nav__links">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-     
+    <footer class="footer" id="footer">
+      <section class="footer__container container">
+        <nav>
+          <h2 class="subtitle">ALPINO BISTRO</h2>
+
+          <ul class="nav__link nav__link--footer">
+            <li class="nav__items">
+              <a href="./index.html" class="nav__links" title="home">Inicio</a>
+            </li>
+            <li class="nav__items">
+              <a href="./about.html" class="nav__links" title="about"
+                >Sobre Nosotros</a>
+            </li>
+            <li class="nav__items">
+              <a href="./services.html" class="nav__links" title="service"
+                >Servicios</a>
+            </li>
+            <li class="nav__items">
+              <a href="./menu.html" class="nav__links" title="menu">Menu</a>
+            </li>
+            <li class="nav__items">
+              <a href="#" class="nav__links" title="privacy"
+                >Privacy policy</a>
+            </li>
+            <li class="nav__items">
+              <a href="./contacts.html" class="nav__links" title="contact"
+                >Contacto</a>
+            </li>
+          </ul>
+        </nav>
+
         <ul class="footer__contact">
+          <li class="footer__item">
+            <a href="#" class="footer__link" title="icon-tiktok">
+              <img
+                src="./image/tiktok.svg"
+                class="footer__img"
+                alt="tiktok"
+                loading="lazy"
+              />
+            </a>
+          </li>
 
-            <li class="footer__item">
+          <li class="footer__item">
+            <a href="#" class="footer__link" title="icon-instagram">
+              <img
+                src="./image/instagram.svg"
+                class="footer__img"
+                alt="instagram"
+                loading="lazy"
+              />
+            </a>
+          </li>
 
-                <a href="#" class="footer__link">
-                    <img src="./image/tiktok.svg" class="footer__img" alt="tiktok">
-                </a>
-
-            </li>
-            
-            <li class="footer__item">
-
-                <a href="#" class="footer__link">
-                    <img src="./image/instagram.svg" class="footer__img" alt="instagram">
-                </a>
-
-            </li>
-
-            <li class="footer__item">
-
-                <a href="#" class="footer__link">
-                    <img src="./image/meta.svg" class="footer__img">
-                </a>
-            </li>
-            
+          <li class="footer__item">
+            <a href="#" class="footer__link" title="icon-meta">
+              <img
+                src="./image/meta.svg"
+                class="footer__img"
+                alt="meta"
+                loading="lazy"
+              />
+            </a>
+          </li>
         </ul>
         <section class="footer__copy">
-            <h3 class="footer__copyright">Derechos reservados &copy;Gastronomi</h3>
+          <h3 class="footer__copyright">
+            Derechos reservados &copy;Gastronomi
+          </h3>
         </section>
-      
-    </section>
-            
-
-       
-
-</footer>
- 
-
-  
-  
-    
-</body>
+      </section>
+      <p class="paragraph__footer">Direccion: Calle Aladierna 5, 2A</p>
+    </footer>
+  </body>
 </html>
