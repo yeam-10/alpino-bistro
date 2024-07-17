@@ -1,164 +1,179 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index.css">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/index.css">
 
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!------------Javascript--------------->
-    <script defer src="./js/index.js"></script>
-    <script defer src="./js/menu.js"></script>
+        <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon">
 
-    <title>Alpino Bistro</title>
-</head>
-<body>
+            <!-- Primary Meta Tags -->
+        <title>Alpino Bistro - Experiencia Gastronómica Única en Cada Bocado</title>
+        <meta name="title" content="Alpino Bistro - Experiencia Gastronómica Única en Cada Bocado">
+        <meta name="description" content="Disfruta de una experiencia culinaria única en Alpino Bistro, donde fusionamos tradición y modernidad en cada plato. Descubre nuestro menú innovador y delicioso, elaborado por la reconocida Chef Narda Lepes. ¡Te esperamos!">
 
-    <!--------------------------------------------Header--------------------------------------------------------->
-    <header class="hero">
-        <nav class="nav container container--hero">
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://alpino-rest-bistro.anyeimarrequenacei.com/">
+        <meta property="og:title" content="Alpino Bistro - Experiencia Gastronómica Única en Cada Bocado">
+        <meta property="og:description" content="Disfruta de una experiencia culinaria única en Alpino Bistro, donde fusionamos tradición y modernidad en cada plato. Descubre nuestro menú innovador y delicioso, elaborado por la reconocida Chef Narda Lepes. ¡Te esperamos!">
+        <meta property="og:image" content="https://alpino-rest-bistro.anyeimarrequenacei.com/image/service-restaurant.avif">
 
-            <img src="./image/alpinob.png" class="nav__logo" alt="logo">
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://alpino-rest-bistro.anyeimarrequenacei.com/">
+        <meta property="twitter:title" content="Alpino Bistro - Experiencia Gastronómica Única en Cada Bocado">
+        <meta property="twitter:description" content="Disfruta de una experiencia culinaria única en Alpino Bistro, donde fusionamos tradición y modernidad en cada plato. Descubre nuestro menú innovador y delicioso, elaborado por la reconocida Chef Narda Lepes. ¡Te esperamos!">
+        <meta property="twitter:image" content="https://alpino-rest-bistro.anyeimarrequenacei.com/image/service-restaurant.avif">
 
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="./index.html" class="nav__link">Inicio</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./services.html" class="nav__link">Servicios</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./about.html" class="nav__link">Sobre Nosotros</a>
-                </li>
-             
-                <li class="nav__item">
-                    <a href="./menu.html" class="nav__link">Menu</a>
-                </li>
-                <li class="nav__item">
-                    <a href="./contacts.html" class="nav__link">Contacto</a>
-                </li>
-            </ul>
-            <img src="./image/menu.svg" class="nav__menu" alt="logo-menu">
-        
-        </nav>
+    <!-- Meta Tags Generated with https://metatags.io -->
 
-        <section class="hero__container container">
-            <h1 class="hero__title">Contáctanos</h1>
-            <p class="hero__paragraph">¡Nos encantaría saber de ti! Ya sea para realizar una reserva, solicitar más información sobre nuestros servicios o simplemente para compartir tus comentarios, estamos aquí para ayudarte. Por favor, completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.</p>
-            <a href="#" class="cta">Reserva ahora</a>
-        </section>
-    </header>
+        <!------------Javascript--------------->
+        <script defer src="./js/index.js"></script>
+        <script defer src="./js/menu.js"></script>
+    </head>
+    <body>
 
-    <!-------------------------------------------------Main----------------------------------------------------------->
+        <!--------------------------------------------Header--------------------------------------------------------->
+        <header class="hero">
+            <nav class="nav container container--hero">
 
-    <main class="main">
+                <img src="./image/logo.svg" class="nav__logo" alt="logo">
 
-        <section class="contacts" id="contactos">
-
-            <article class="contacts__container container">
-
-                <form class="form" action="#" method="post">
-                    <h2 class="form__title">Formulario de reservas</h2>
-                  <p class="form__paragraph">Reserva ahora <a class="form__link" href="#" title="reserve">Entra aqui</a></p>
-
-                  <div class="form__container">
-                    <div class="form__group">
-                        <input type="text" name="name" id="name" class="form__input" placeholder="">
-                        <label for="name" class="form__label">Nombre:</label>
-                        <span class="form__line"></span>
-                    </div>
-
-
-                    <div class="form__group">
-                        <input type="text" name="user" id="user" class="form__input" placeholder=" ">
-                        <label for="name" class="form__label">Usuario:</label>
-                        <span class="form__line"></span>
-                    </div>
-
-                    <div class="form__group">
-                        <input type="text" name="password" id="password" class="form__input" placeholder=" ">
-                        <label for="name" class="form__label">Contrasena:</label>
-                        <span class="form__line"></span>
-                    </div>
-                    <input type="submit" class="form__submit" value="Reservar">
-                  </div>
-                </form>
-
-                <div class="about__texts">
-
-                    <h2 class="subtitle">Contáctanos</h2>
-                    <p class="paragraph__contacts">Haz tu reserva de manera rápida y sencilla utilizando nuestro formulario en línea. Simplemente proporciona la información requerida y nos encargaremos del resto. Te confirmaremos tu reserva a la brevedad. </p>
-                    <p class="paragraph__contacts">Horario 12:00pm a 11:00pm</p>
-                    <p class="paragraph__contacts">Telefono: +34-607898678</p>
-                  
-                </div> 
-            </article>
-
-        </section>
-    </main>
-
-<footer class="footer" id="footer">
-
-    <section class="footer__container container">
-
-        <h2 class="subtitle">ALPINO BISTRO</h2>
-            <nav>
-                <ul class="nav__link nav__link--footer">
-                    <li class="nav__items">
-                        <a href="./index.html" class="nav__links" title="home">Inicio</a>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link">Inicio</a>
                     </li>
-                    <li class="nav__items">
-                        <a href="./about.html" class="nav__links" title="about">Sobre Nosotros</a>
+                    <li class="nav__item">
+                        <a href="./services.html" class="nav__link">Servicios</a>
                     </li>
-                    <li class="nav__items">
-                        <a href="./services.html" class="nav__links" title="service">Servicios</a>
+                    <li class="nav__item">
+                        <a href="./about.html" class="nav__link">Sobre Nosotros</a>
                     </li>
-                    <li class="nav__items">
-                        <a href="./menu.html" class="nav__links" title="menu">Menu</a>
+                
+                    <li class="nav__item">
+                        <a href="./menu.html" class="nav__link">Menú</a>
                     </li>
-                 
-                    <li class="nav__items">
-                        <a href="./contacts.html" class="nav__links">Contacto</a>
+                    <li class="nav__item">
+                        <a href="./contacts.html" class="nav__link">Contacto</a>
                     </li>
                 </ul>
+                <img src="./image/menu.svg" class="nav__menu" alt="logo-menu">
+            
             </nav>
-     
-        <ul class="footer__contact">
 
-            <li class="footer__item">
-                <a href="#" class="footer__link">
-                    <img src="./image/tiktok.svg" class="footer__img" alt="tiktok">
-                </a>
-            </li>
-            
-            <li class="footer__item">
-                <a href="#" class="footer__link">
-                    <img src="./image/instagram.svg" class="footer__img" alt="instagram">
-                </a>
+            <section class="hero__container container">
+                <h1 class="hero__title">Contáctanos</h1>
+                <p class="hero__paragraph">¡Nos encantaría saber de ti! Ya sea para realizar una reserva, solicitar más información sobre nuestros servicios o simplemente para compartir tus comentarios, estamos aquí para ayudarte. Por favor, completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.</p>
+                <a href="#" class="cta">Reserva ahora</a>
+            </section>
+        </header>
 
-            </li>
+        <!-------------------------------------------------Main----------------------------------------------------------->
 
-            <li class="footer__item">
-                <a href="#" class="footer__link">
-                    <img src="./image/meta.svg" class="footer__img" alt="meta">
-                </a>
-            </li>
-            
-        </ul>
-        <section class="footer__copy">
-            <h3 class="footer__copyright">Derechos reservados &copy;Gastronomi</h3>
-        </section>  
-    </section>
-</footer>
- 
+        <main class="main">
 
-  
-  
+            <section class="contacts" id="contactos">
+
+                <article class="contacts__container container">
+
+                    <form class="form" action="#" method="post">
+                        <h2 class="form__title">Formulario de reservas</h2>
+                    <p class="form__paragraph">Reserva ahora <a class="form__link" href="#" title="reserve">Entra aqui</a></p>
+
+                    <div class="form__container">
+                        <div class="form__group">
+                            <input type="text" name="name" id="name" class="form__input" placeholder="">
+                            <label for="name" class="form__label">Nombre:</label>
+                            <span class="form__line"></span>
+                        </div>
+
+
+                        <div class="form__group">
+                            <input type="text" name="user" id="user" class="form__input" placeholder=" ">
+                            <label for="name" class="form__label">Usuario:</label>
+                            <span class="form__line"></span>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="text" name="password" id="password" class="form__input" placeholder=" ">
+                            <label for="name" class="form__label">Contrasena:</label>
+                            <span class="form__line"></span>
+                        </div>
+                        <input type="submit" class="form__submit" value="Reservar">
+                    </div>
+                    </form>
+
+                    <div class="about__texts">
+
+                        <h2 class="subtitle">Contáctanos</h2>
+                        <p class="paragraph__contacts">Haz tu reserva de manera rápida y sencilla utilizando nuestro formulario en línea. Simplemente proporciona la información requerida y nos encargaremos del resto. Te confirmaremos tu reserva a la brevedad. </p>
+                        <p class="paragraph__contacts">Horario 12:00pm a 11:00pm</p>
+                        <p class="paragraph__contacts">Telefono: +34-607898678</p>
+                    
+                    </div> 
+                </article>
+
+            </section>
+        </main>
+
+    <footer class="footer" id="footer">
+
+        <section class="footer__container container">
+
+            <h2 class="subtitle">ALPINO BISTRO</h2>
+                <nav>
+                    <ul class="nav__link nav__link--footer">
+                        <li class="nav__items">
+                            <a href="./index.html" class="nav__links" title="home">Inicio</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="./about.html" class="nav__links" title="about">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="./services.html" class="nav__links" title="service">Servicios</a>
+                        </li>
+                        <li class="nav__items">
+                            <a href="./menu.html" class="nav__links" title="menu">Menu</a>
+                        </li>
+                    
+                        <li class="nav__items">
+                            <a href="./contacts.html" class="nav__links">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+        
+            <ul class="footer__contact">
+
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        <img src="./image/tiktok.svg" class="footer__img" alt="tiktok">
+                    </a>
+                </li>
+                
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        <img src="./image/instagram.svg" class="footer__img" alt="instagram">
+                    </a>
+
+                </li>
+
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        <img src="./image/meta.svg" class="footer__img" alt="meta">
+                    </a>
+                </li>
+                
+            </ul>
+            <section class="footer__copy">
+                <h3 class="footer__copyright">Derechos reservados &copy;Gastronomi</h3>
+            </section>  
+        </section>
+    </footer>
     
-</body>
-</html>
+
+    
+    
+        
+    </body>
+    </html>

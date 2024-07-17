@@ -3,27 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
 
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon">
+
+        <!-- Primary Meta Tags -->
+    <title>Alpino Bistro - Experiencia Gastronómica Única en Cada Bocado</title>
+    <meta name="title" content="Alpino Bistro - Experiencia Gastronómica Única en Cada Bocado">
+    <meta name="description" content="Disfruta de una experiencia culinaria única en Alpino Bistro, donde fusionamos tradición y modernidad en cada plato. Descubre nuestro menú innovador y delicioso, elaborado por la reconocida Chef Narda Lepes. ¡Te esperamos!">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alpino-rest-bistro.anyeimarrequenacei.com/">
+    <meta property="og:title" content="Alpino Bistro - Experiencia Gastronómica Única en Cada Bocado">
+    <meta property="og:description" content="Disfruta de una experiencia culinaria única en Alpino Bistro, donde fusionamos tradición y modernidad en cada plato. Descubre nuestro menú innovador y delicioso, elaborado por la reconocida Chef Narda Lepes. ¡Te esperamos!">
+    <meta property="og:image" content="https://alpino-rest-bistro.anyeimarrequenacei.com/image/service-restaurant.avif">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alpino-rest-bistro.anyeimarrequenacei.com/">
+    <meta property="twitter:title" content="Alpino Bistro - Experiencia Gastronómica Única en Cada Bocado">
+    <meta property="twitter:description" content="Disfruta de una experiencia culinaria única en Alpino Bistro, donde fusionamos tradición y modernidad en cada plato. Descubre nuestro menú innovador y delicioso, elaborado por la reconocida Chef Narda Lepes. ¡Te esperamos!">
+    <meta property="twitter:image" content="https://alpino-rest-bistro.anyeimarrequenacei.com/image/service-restaurant.avif">
+
+<!-- Meta Tags Generated with https://metatags.io -->
+
     <!------------Javascript--------------->
     <script defer src="./js/index.js"></script>
     <script defer src="./js/questions.js"></script>
     <script defer src="./js/menu.js"></script>
+    <script defer src="./js/animation.js"></script>
 
-    <title>Alpino Bistro</title>
   </head>
   <body>
     <!-----------------------------Header--------------------------------->
     <header class="hero">
       <nav class="nav container container--hero">
-        <img src="./image/alpinob.png" class="nav__logo" alt="logo" />
+        <img src="./image/logo.svg" class="nav__logo" alt="logo" />
 
         <ul class="nav__list">
           <li class="nav__item">
@@ -71,8 +87,8 @@
       <section class="about" id="nosotros">
         <article class="about__container container">
           <div class="about__texts">
-            <h2 class="subtitle">Nuestros servicios</h2>
-            <p class="paragraph">
+            <h2 class="subtitle appear">Nuestros servicios</h2>
+            <p class="paragraph appear">
               En Alpino Bistro, nos dedicamos a ofrecer una experiencia completa
               y memorable para cada uno de nuestros clientes. Además de nuestra
               exquisita oferta gastronómica, brindamos una serie de servicios
@@ -80,7 +96,7 @@
               momento especial.
             </p>
 
-            <p class="paragraph">
+            <p class="paragraph appear">
               Nos esforzamos por ofrecer más que una simple comida; queremos
               brindarte una experiencia completa que recordarás con cariño. Sea
               cual sea tu necesidad, nuestro equipo está aquí para asegurarse de
@@ -114,8 +130,8 @@
           </picture>
 
           <div class="about__texts">
-            <h2 class="subtitle">Reservas en Línea</h2>
-            <p class="paragraph">
+            <h2 class="subtitle appear">Reservas en Línea</h2>
+            <p class="paragraph appear">
               Alpino Bistro es el lugar ideal para tus celebraciones especiales,
               ya sean cumpleaños, aniversarios, reuniones familiares o eventos
               corporativos. Ofrecemos opciones de menú personalizadas y un
@@ -123,7 +139,7 @@
               encargará de cada detalle para que tu evento sea un éxito.
             </p>
 
-            <p class="paragraph">
+            <p class="paragraph appear">
               Simplifica tu visita reservando tu mesa a través de nuestro
               sistema en línea. Con solo unos clics, puedes asegurarte de que tu
               mesa esté lista para cuando llegues. Nuestro sistema de reservas
@@ -137,8 +153,8 @@
       <section class="about" id="dinner">
         <article class="about__container container">
           <div class="about__texts">
-            <h2 class="subtitle">Comidas y Cenas</h2>
-            <p class="paragraph">
+            <h2 class="subtitle appear">Comidas y Cenas</h2>
+            <p class="paragraph appear">
               Disfruta de una experiencia gastronómica completa con nuestros
               menús de almuerzos y cenas. Cada plato está elaborado con
               ingredientes frescos y de alta calidad, ofreciendo una fusión de
@@ -147,7 +163,7 @@
               memorable.
             </p>
 
-            <p class="paragraph">
+            <p class="paragraph appear">
               Ven y disfruta de nuestro brunch especial los fines de semana.
               Ofrecemos una amplia selección de platos que combinan lo mejor del
               desayuno y el almuerzo, perfectos para empezar el día con buen
@@ -164,8 +180,8 @@
       </section>
 
       <section class="questions container">
-        <h2 class="subtitle">Preguntas frecuentes - Servicios</h2>
-        <p class="questions__paragraph">
+        <h2 class="subtitle appear">Preguntas frecuentes - Servicios</h2>
+        <p class="questions__paragraph appear">
           En Alpino Bistro, queremos asegurarnos de que tengas toda la
           información necesaria para disfrutar de tu experiencia con nosotros.
           Aquí respondemos algunas de las preguntas más frecuentes sobre
